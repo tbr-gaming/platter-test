@@ -27,3 +27,6 @@ coverage/
 
 # Misc
 *.log
+
+# Temporary files
+.shopify/
