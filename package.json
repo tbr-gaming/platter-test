@@ -1,0 +1,22 @@
+{
+  "name": "platter-test-shopify-theme",
+  "version": "1.0.0",
+  "description": "Shopify Dawn theme with Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/input.css -o ./assets/tailwind.css --watch",
+    "build-css-prod": "tailwindcss -i ./src/input.css -o ./assets/tailwind.css --minify",
+    "dev": "npm run build-css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10"
+  },
+  "keywords": [
+    "shopify",
+    "theme",
+    "tailwindcss",
+    "dawn"
+  ]
+}
