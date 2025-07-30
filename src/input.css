@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Shopify theme integration styles */
+@layer base {
+  /* Ensure Tailwind works well with existing Dawn theme variables */
+  html {
+    /* Preserve Dawn's CSS custom properties */
+    font-size: inherit;
+  }
+}
+
+@layer components {
+  /* Custom component classes that work well with Shopify themes */
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-md transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden;
+  }
+  
+  .form-input {
+    @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500;
+  }
+}
+
+@layer utilities {
+  /* Custom utility classes for Shopify-specific needs */
+  .text-balance {
+    text-wrap: balance;
+  }
+}

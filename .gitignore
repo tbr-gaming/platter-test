@@ -17,6 +17,9 @@ yarn-error.log*
 dist/
 build/
 
+# Tailwind CSS compiled output (keep this in version control for Shopify)
+# assets/tailwind.css
+
 # IDE files
 .vscode/
 .idea/
